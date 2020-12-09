@@ -1,0 +1,32 @@
+{
+  "name": "example-swagger-autogen-using-router",
+  "version": "1.0.0",
+  "description": "Example showing the use of the swagger-autogen module with Router.",
+  "main": "index.js",
+  "readmeFilename": "README.md",
+  "private": false,
+  "keywords": [
+    "swagger",
+    "autogen",
+    "example",
+    "router"
+  ],
+  "author": {
+    "name": "Davi D. Baltar",
+    "email": "davibaltar.npm@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davibaltar/example-swagger-autogen-with-router.git"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "swagger-autogen": "node swagger.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "swagger-autogen": "^2.0.0",
+    "swagger-ui-express": "^4.1.4"
+  }
+}
