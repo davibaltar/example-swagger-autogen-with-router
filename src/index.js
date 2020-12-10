@@ -14,7 +14,7 @@ const express = require('express')
 const app = express()
 
 /* Routes */
-const router = require('./router')
+const router = require('./routes')
 
 /* Middlewares */
 app.use(router)
