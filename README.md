@@ -13,7 +13,7 @@ Run the project and access the documentation at:
 Use the command below to generate the documentation at project startup:
 
 ```bash
-$ npm run start-with-swagger-autogen
+$ npm run start-gendoc
 ```
 
 Use the command below to start the project without generating the documentation:

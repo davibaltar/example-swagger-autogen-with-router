@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "start-with-swagger-autogen": "node swagger.js"
+    "start-gendoc": "node swagger.js"
   },
   "dependencies": {
     "express": "^4.17.1",
