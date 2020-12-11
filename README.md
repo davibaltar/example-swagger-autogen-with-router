@@ -23,7 +23,7 @@ $ npm start
 ```
 
 ## Screenshot
-See the result after construction in the image below:
+See the result after construction:
 
 ![](https://raw.githubusercontent.com/davibaltar/public-store/master/screen-swagger-autogen-using-router.png)
 
