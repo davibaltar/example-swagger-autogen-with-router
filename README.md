@@ -22,5 +22,11 @@ Use the command below to start the project without generating the documentation:
 $ npm start
 ```
 
+## Screenshot
+See the result after construction in the image below:
+
+![](https://raw.githubusercontent.com/davibaltar/public-store/master/screen-swagger-autogen-using-router.png)
+
+
 ## License
 [MIT] (LICENSE) License

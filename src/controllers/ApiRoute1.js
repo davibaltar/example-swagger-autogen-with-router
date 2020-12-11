@@ -4,7 +4,7 @@ const authorize = require('../middlewares/auth')
 
 router.post('/signin', (req, res, next) => {
   /* 	#swagger.tags = ['User']
-      #swagger.description = 'Endpoint to add a user.' */
+      #swagger.description = 'Endpoint to sign in a specific user' */
 
   /*	#swagger.parameters['obj'] = {
           in: 'body',

@@ -90,7 +90,7 @@
         "tags": [
           "User"
         ],
-        "description": "Endpoint to add a user.",
+        "description": "Endpoint to sign in a specific user",
         "parameters": [
           {
             "name": "obj",
