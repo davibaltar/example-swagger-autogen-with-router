@@ -6,10 +6,6 @@ Install the dependencies:
 $ npm install
 ```
 
-Run the project and access the documentation at:
-
-[http://localhost:3000/doc](http://localhost:3000/doc)
-
 Use the command below to generate the documentation at project startup:
 
 ```bash
@@ -21,6 +17,10 @@ Use the command below to start the project without generating the documentation:
 ```bash
 $ npm start
 ```
+
+Run the project and access the documentation at:
+
+[http://localhost:3000/doc](http://localhost:3000/doc)
 
 ## Screenshot
 See the result after construction:
