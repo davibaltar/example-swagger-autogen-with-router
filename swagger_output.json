@@ -50,7 +50,9 @@
             "description": "OK"
           }
         },
-        "produces": []
+        "produces": [
+          "application/json"
+        ]
       }
     },
     "/test-post": {
@@ -137,7 +139,7 @@
     "/v2/test-get": {
       "get": {
         "tags": [],
-        "description": "",
+        "description": "Description here...",
         "parameters": [],
         "responses": {
           "200": {
