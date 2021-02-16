@@ -29,4 +29,4 @@ See the result after construction:
 
 
 ## License
-[MIT] (LICENSE) License
+[MIT](LICENSE) License
