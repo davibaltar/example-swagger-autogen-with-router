@@ -19,19 +19,11 @@ const doc = {
         }
     ],
     securityDefinitions: {
-        api_key: {
+        apiKeyAuth:{
             type: "apiKey",
-            name: "api_key",
-            in: "header"
-        },
-        petstore_auth: {
-            type: "oauth2",
-            authorizationUrl: "https://petstore.swagger.io/oauth/authorize",
-            flow: "implicit",
-            scopes: {
-                read_pets: "read your pets",
-                write_pets: "modify pets in your account"
-            }
+            in: "header",       // can be "header", "query" or "cookie"
+            name: "X-API-KEY",  // name of the header, query parameter or cookie
+            description: "any description..."
         }
     },
     definitions: {

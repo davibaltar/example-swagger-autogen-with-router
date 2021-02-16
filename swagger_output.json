@@ -18,19 +18,11 @@
     "https"
   ],
   "securityDefinitions": {
-    "api_key": {
+    "apiKeyAuth": {
       "type": "apiKey",
-      "name": "api_key",
-      "in": "header"
-    },
-    "petstore_auth": {
-      "type": "oauth2",
-      "authorizationUrl": "https://petstore.swagger.io/oauth/authorize",
-      "flow": "implicit",
-      "scopes": {
-        "read_pets": "read your pets",
-        "write_pets": "modify pets in your account"
-      }
+      "in": "header",
+      "name": "X-API-KEY",
+      "description": "any description..."
     }
   },
   "consumes": [
@@ -44,15 +36,15 @@
       "get": {
         "tags": [],
         "description": "",
+        "produces": [
+          "application/json"
+        ],
         "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
           }
-        },
-        "produces": [
-          "application/json"
-        ]
+        }
       }
     },
     "/test-post": {
@@ -75,7 +67,8 @@
           {
             "name": "id",
             "in": "path",
-            "required": true
+            "required": true,
+            "type": "string"
           }
         ],
         "responses": {
@@ -97,7 +90,6 @@
             "in": "body",
             "description": "User information.",
             "required": true,
-            "type": "object",
             "schema": {
               "$ref": "#/definitions/AddUser"
             }
@@ -107,7 +99,12 @@
           "201": {
             "description": "Created"
           }
-        }
+        },
+        "security": [
+          {
+            "apiKeyAuth": []
+          }
+        ]
       }
     },
     "/users/{id}": {
@@ -120,7 +117,8 @@
           {
             "name": "id",
             "in": "path",
-            "required": true
+            "required": true,
+            "type": "string"
           }
         ],
         "responses": {
@@ -159,7 +157,8 @@
           {
             "name": "id",
             "in": "path",
-            "required": true
+            "required": true,
+            "type": "string"
           }
         ],
         "responses": {
@@ -185,9 +184,6 @@
           "type": "string",
           "example": "Marie Doe"
         }
-      },
-      "xml": {
-        "name": "Parents"
       }
     },
     "User": {
@@ -202,9 +198,6 @@
           "example": 29
         },
         "parents": {
-          "xml": {
-            "name": "parents"
-          },
           "$ref": "#/definitions/Parents"
         },
         "diplomas": {
@@ -240,9 +233,6 @@
             }
           }
         }
-      },
-      "xml": {
-        "name": "User"
       }
     },
     "AddUser": {
@@ -264,10 +254,7 @@
       "required": [
         "name",
         "age"
-      ],
-      "xml": {
-        "name": "AddUser"
-      }
+      ]
     }
   }
 }
